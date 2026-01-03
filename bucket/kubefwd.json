@@ -1,0 +1,24 @@
+{
+    "version": "1.25.7",
+    "description": "Bulk port forwarding Kubernetes services for local development",
+    "homepage": "https://kubefwd.com",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/txn2/kubefwd/releases/download/v1.25.7/kubefwd_Windows_x86_64.zip",
+            "hash": "202274458c69f702690f791296b46754b916ffddcce843ee7631c535be6c0ff4"
+        }
+    },
+    "bin": "kubefwd.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/txn2/kubefwd/releases/download/v$version/kubefwd_Windows_x86_64.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/kubefwd_checksums.txt"
+        }
+    }
+}
